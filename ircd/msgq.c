@@ -18,7 +18,7 @@
  */
 /** @file
  * @brief Outbound message queue implementation.
- * @version $Id: msgq.c 1627 2006-03-14 03:56:58Z entrope $
+ * @version $Id$
  */
 #include "config.h"
 

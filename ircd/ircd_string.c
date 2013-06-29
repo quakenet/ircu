@@ -18,7 +18,7 @@
  */
 /** @file
  * @brief Implementation of string operations.
- * @version $Id: ircd_string.c 1872 2008-03-20 23:58:27Z entrope $
+ * @version $Id$
  */
 #include "config.h"
 

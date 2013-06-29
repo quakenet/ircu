@@ -17,7 +17,7 @@
  */
 /** @file
  * @brief Interface and declarations for handling listening sockets.
- * @version $Id: listener.h 1732 2006-12-07 05:14:51Z entrope $
+ * @version $Id$
  */
 #ifndef INCLUDED_listener_h
 #define INCLUDED_listener_h

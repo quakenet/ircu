@@ -19,7 +19,7 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  *
- * $Id: m_wallvoices.c 1913 2009-07-04 22:46:00Z entrope $
+ * $Id$
  */
 
 /*

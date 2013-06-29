@@ -99,7 +99,7 @@
 
 /** @file
  * @brief DNS resolver library functions.
- * @version $Id: ircd_reslib.c 1764 2007-02-25 15:41:49Z entrope $
+ * @version $Id$
  */
 
 /** Array of nameserver addresses. */

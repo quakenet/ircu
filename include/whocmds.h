@@ -1,6 +1,6 @@
 /** @file whocmds.h
  * @brief Support functions for /WHO-like commands.
- * @version $Id: whocmds.h 1838 2007-10-30 01:53:33Z entrope $
+ * @version $Id$
  */
 #ifndef INCLUDED_whocmds_h
 #define INCLUDED_whocmds_h

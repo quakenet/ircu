@@ -21,7 +21,7 @@
  */
 /** @file
  * @brief Capability negotiation commands
- * @version $Id: m_cap.c 1620 2006-02-16 03:49:55Z entrope $
+ * @version $Id$
  */
 
 #include "config.h"

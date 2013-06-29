@@ -19,7 +19,7 @@
  */
 /** @file
  * @brief Interfaces for sending common replies to users.
- * @version $Id: ircd_reply.h 1224 2004-10-05 02:39:38Z entrope $
+ * @version $Id$
  */
 #ifndef INCLUDED_ircd_reply_h
 #define INCLUDED_ircd_reply_h

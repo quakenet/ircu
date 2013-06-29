@@ -22,7 +22,7 @@
  */
 /** @file
  * @brief Structures and APIs for G-line manipulation.
- * @version $Id: gline.h 1913 2009-07-04 22:46:00Z entrope $
+ * @version $Id$
  */
 #ifndef INCLUDED_sys_types_h
 #include <sys/types.h>

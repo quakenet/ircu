@@ -18,7 +18,7 @@
  */
 /** @file
  * @brief Implementation of OS-dependent operations.
- * @version $Id: os_generic.c 1767 2007-02-28 22:38:50Z entrope $
+ * @version $Id$
  */
 #include "config.h"
 

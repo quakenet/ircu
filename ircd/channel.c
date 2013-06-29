@@ -19,7 +19,7 @@
  */
 /** @file
  * @brief Channel management and maintenance
- * @version $Id: channel.c 1928 2010-01-03 21:04:54Z entrope $
+ * @version $Id$
  */
 #include "config.h"
 

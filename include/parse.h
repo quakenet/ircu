@@ -1,6 +1,6 @@
 /** @file parse.h
  * @brief Declarations for parsing input from users and other servers.
- * @version $Id: parse.h 1231 2004-10-05 04:21:37Z entrope $
+ * @version $Id$
  */
 #ifndef INCLUDED_parse_h
 #define INCLUDED_parse_h

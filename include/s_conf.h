@@ -1,6 +1,6 @@
 /** @file s_conf.h
  * @brief ircd configuration file API.
- * @version $Id: s_conf.h 1462 2005-08-21 13:46:08Z entrope $
+ * @version $Id$
  */
 #ifndef INCLUDED_s_conf_h
 #define INCLUDED_s_conf_h

@@ -19,7 +19,7 @@
  */
 /** @file
  * @brief Channel management and maintenance.
- * @version $Id: channel.h 1913 2009-07-04 22:46:00Z entrope $
+ * @version $Id$
  */
 #ifndef INCLUDED_channel_h
 #define INCLUDED_channel_h

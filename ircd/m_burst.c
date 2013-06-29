@@ -20,7 +20,7 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  *
- * $Id: m_burst.c 1941 2010-01-14 02:35:51Z entrope $
+ * $Id$
  */
 
 /*

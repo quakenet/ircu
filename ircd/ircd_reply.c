@@ -22,7 +22,7 @@
  */
 /** @file
  * @brief Implementation of functions to send common replies to users.
- * @version $Id: ircd_reply.c 1762 2007-02-04 04:18:31Z entrope $
+ * @version $Id$
  */
 #include "config.h"
 

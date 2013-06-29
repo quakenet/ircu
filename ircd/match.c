@@ -18,7 +18,7 @@
  */
 /** @file
  * @brief Functions to match strings against IRC mask strings.
- * @version $Id: match.c 1891 2008-11-18 02:30:15Z entrope $
+ * @version $Id$
  */
 #include "config.h"
 

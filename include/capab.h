@@ -20,7 +20,7 @@
  */
 /** @file
  * @brief Interface and public definitions for capabilities extension
- * @version $Id: capab.h 1349 2005-04-05 01:46:05Z entrope $
+ * @version $Id$
  */
 
 #ifndef INCLUDED_client_h

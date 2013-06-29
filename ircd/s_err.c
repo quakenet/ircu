@@ -18,7 +18,7 @@
  */
 /** @file
  * @brief Error handling support.
- * @version $Id: s_err.c 1905 2009-02-09 01:30:13Z entrope $
+ * @version $Id$
  */
 #include "config.h"
 

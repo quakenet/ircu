@@ -19,7 +19,7 @@
  */
 /** @file
  * @brief Structures and functions for handling local clients.
- * @version $Id: client.h 1907 2009-02-09 04:11:04Z entrope $
+ * @version $Id$
  */
 #ifndef INCLUDED_client_h
 #define INCLUDED_client_h
@@ -556,7 +556,7 @@ struct Client {
 /** Return non-zero if the client caused a net.burst. */
 #define IsJunction(x)           HasFlag(x, FLAG_JUNCTION)
 /** Return non-zero if the client has set mode +O (local operator) locally. */
-#define IsLocOp(x)              (MyUser(x) && HasFlag(x, FLAG_LOCOP))
+#define IsLocOp(x)              (MyConnect(x) && HasFlag(x, FLAG_LOCOP))
 /** Return non-zero if the client has set mode +o (global operator). */
 #define IsOper(x)               HasFlag(x, FLAG_OPER)
 /** Return non-zero if the client has an active UDP ping request. */

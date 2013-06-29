@@ -17,7 +17,7 @@
  */
 /** @file
  * @brief Interface for DNS and ident lookups.
- * @version $Id: s_auth.h 1925 2010-01-02 20:33:10Z klmitch $
+ * @version $Id$
  */
 #ifndef INCLUDED_s_auth_h
 #define INCLUDED_s_auth_h

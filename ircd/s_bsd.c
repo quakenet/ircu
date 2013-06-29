@@ -19,7 +19,7 @@
  */
 /** @file
  * @brief Functions that now (or in the past) relied on BSD APIs.
- * @version $Id: s_bsd.c 1944 2010-03-04 13:52:35Z klmitch $
+ * @version $Id$
  */
 #include "config.h"
 

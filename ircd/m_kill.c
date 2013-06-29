@@ -20,7 +20,7 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  *
- * $Id: m_kill.c 1876 2008-09-07 02:10:22Z isomer $
+ * $Id$
  */
 
 /*

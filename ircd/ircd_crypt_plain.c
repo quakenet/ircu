@@ -20,7 +20,7 @@
 /**
  * @file
  * @brief Routines for PLAIN passwords.
- * @version $Id: ircd_crypt_plain.c 1271 2004-12-11 05:14:07Z klmitch $
+ * @version $Id$
  * 
  * PLAIN text encryption.  Oxymoron and a half that.
  */

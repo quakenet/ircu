@@ -17,7 +17,7 @@
  */
 /** @file
  * @brief IRC logging interface.
- * @version $Id: ircd_log.h 1392 2005-05-01 16:11:01Z entrope $
+ * @version $Id$
  */
 #ifndef INCLUDED_ircd_log_h
 #define INCLUDED_ircd_log_h

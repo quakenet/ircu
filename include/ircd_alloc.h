@@ -20,7 +20,7 @@
  */
 /** @file
  * @brief IRC daemon memory allocation functions.
- * @version $Id: ircd_alloc.h 1306 2005-01-27 04:07:46Z entrope $
+ * @version $Id$
  */
 #ifndef INCLUDED_ircd_alloc_h
 #define INCLUDED_ircd_alloc_h

@@ -22,7 +22,7 @@
  */
 /** @file
  * @brief Miscellaneous support functions.
- * @version $Id: s_misc.c 1818 2007-07-14 02:40:01Z isomer $
+ * @version $Id$
  */
 #include "config.h"
 

@@ -19,7 +19,7 @@
 /**
  * @file
  * @brief Native crypt() function routines
- * @version $Id: ircd_crypt_native.c 1577 2005-12-14 03:01:38Z entrope $
+ * @version $Id$
  * 
  * Routines for handling passwords encrypted with the system's native crypt()
  * function (typically a DES encryption routine, but can be anything nowadays).

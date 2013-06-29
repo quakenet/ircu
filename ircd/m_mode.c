@@ -20,7 +20,7 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  *
- * $Id: m_mode.c 1818 2007-07-14 02:40:01Z isomer $
+ * $Id$
  */
 
 /*

@@ -22,7 +22,7 @@
  */
 /** @file
  * @brief Miscellaneous user-related helper functions.
- * @version $Id: s_user.c 1919 2009-07-31 02:04:15Z entrope $
+ * @version $Id$
  */
 #include "config.h"
 

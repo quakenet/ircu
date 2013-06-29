@@ -19,7 +19,7 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  *
- * $Id: m_xquery.c 1934 2010-01-04 17:15:13Z klmitch $
+ * $Id$
  */
 
 /*

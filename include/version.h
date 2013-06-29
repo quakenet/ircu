@@ -1,7 +1,7 @@
 /*
  * version.h
  *
- * $Id: version.h 27 2000-03-18 05:20:30Z bleep $
+ * $Id$
  */
 #ifndef INCLUDED_version_h
 #define INCLUDED_version_h

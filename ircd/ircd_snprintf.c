@@ -18,7 +18,7 @@
  */
 /** @file
  * @brief IRC-specific printf() clone implementation.
- * @version $Id: ircd_snprintf.c 1642 2006-04-07 03:56:22Z entrope $
+ * @version $Id$
  */
 #include "config.h"
 

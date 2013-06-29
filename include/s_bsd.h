@@ -1,6 +1,6 @@
 /** @file s_bsd.h
  * @brief Wrapper functions to avoid direct use of BSD APIs.
- * @version $Id: s_bsd.h 1764 2007-02-25 15:41:49Z entrope $
+ * @version $Id$
  */
 #ifndef INCLUDED_s_bsd_h
 #define INCLUDED_s_bsd_h

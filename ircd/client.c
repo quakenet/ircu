@@ -18,7 +18,7 @@
  */
 /** @file
  * @brief Implementation of functions for handling local clients.
- * @version $Id: client.c 1523 2005-10-12 23:52:12Z entrope $
+ * @version $Id$
  */
 #include "config.h"
 

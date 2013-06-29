@@ -18,7 +18,7 @@
  */
 /** @file
  * @brief BSD sockets select() event engine.
- * @version $Id: engine_select.c 1930 2010-01-03 21:50:50Z entrope $
+ * @version $Id$
  */
 #include "config.h"
 

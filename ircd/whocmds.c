@@ -22,7 +22,7 @@
  */
 /** @file
  * @brief Support functions for /WHO-like commands.
- * @version $Id: whocmds.c 1838 2007-10-30 01:53:33Z entrope $
+ * @version $Id$
  */
 #include "config.h"
 

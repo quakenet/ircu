@@ -1,6 +1,6 @@
 /** @file send.h
  * @brief Send messages to certain targets.
- * @version $Id: send.h 1274 2004-12-16 03:28:52Z entrope $
+ * @version $Id$
  */
 #ifndef INCLUDED_send_h
 #define INCLUDED_send_h

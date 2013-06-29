@@ -1,6 +1,6 @@
 /** @file packet.h
  * @brief Declarations for packet handling functions.
- * @version $Id: packet.h 1231 2004-10-05 04:21:37Z entrope $
+ * @version $Id$
  */
 #ifndef INCLUDED_packet_h
 #define INCLUDED_packet_h

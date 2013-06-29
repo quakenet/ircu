@@ -16,7 +16,7 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  *
- * $Id: supported.h 1860 2007-12-28 15:52:43Z klmitch $
+ * $Id$
  *
  * Description: This file has the featureset that ircu announces on connecting
  *              a client.  It's in this .h because it's likely to be appended

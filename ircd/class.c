@@ -18,7 +18,7 @@
  */
 /** @file
  * @brief Implementation of connection class handling functions.
- * @version $Id: class.c 1514 2005-10-06 00:37:31Z entrope $
+ * @version $Id$
  */
 #include "config.h"
 

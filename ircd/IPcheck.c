@@ -18,7 +18,7 @@
  */
 /** @file
  * @brief Code to count users connected from particular IP addresses.
- * @version $Id: IPcheck.c 1456 2005-08-15 23:22:50Z entrope $
+ * @version $Id$
  */
 #include "config.h"
 

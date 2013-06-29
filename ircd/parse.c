@@ -19,7 +19,7 @@
  */
 /** @file
  * @brief Parse input from IRC clients and other servers.
- * @version $Id: parse.c 1925 2010-01-02 20:33:10Z klmitch $
+ * @version $Id$
  */
 #include "config.h"
 

@@ -18,7 +18,7 @@
  */
 /** @file
  * @brief Core password encryption and hashing APIs.
- * @version $Id: ircd_crypt.h 1264 2004-11-07 21:04:59Z entrope $
+ * @version $Id$
  */
 #ifndef INCLUDED_ircd_crypt_h
 #define INCLUDED_ircd_crypt_h

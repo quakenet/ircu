@@ -22,7 +22,7 @@
  */
 /** @file
  * @brief Miscellaneous server support functions.
- * @version $Id: s_serv.c 1438 2005-06-28 00:42:06Z entrope $
+ * @version $Id$
  */
 #include "config.h"
 

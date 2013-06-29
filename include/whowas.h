@@ -18,7 +18,7 @@
  */
 /** @file
  * @brief Globally visible declarations to manipulate whowas information.
- * @version $Id: whowas.h 1229 2004-10-05 04:14:44Z entrope $
+ * @version $Id$
  */
 #ifndef INCLUDED_whowas_h
 #define INCLUDED_whowas_h

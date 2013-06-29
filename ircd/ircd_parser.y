@@ -17,7 +17,7 @@
  *  along with this program; if not, write to the Free Software
  *  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307,
  *  USA.
- * $Id: ircd_parser.y 1907 2009-02-09 04:11:04Z entrope $
+ * $Id$
  */
 %{
 

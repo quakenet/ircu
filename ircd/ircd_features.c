@@ -18,7 +18,7 @@
  */
 /** @file
  * @brief Implementation of configurable feature support.
- * @version $Id: ircd_features.c 1922 2010-01-02 04:00:13Z entrope $
+ * @version $Id$
  */
 #include "config.h"
 
@@ -331,8 +331,8 @@ static struct FeatureDesc {
   F_I(MAXCHANNELSPERUSER, 0, 10, 0),
   F_I(NICKLEN, 0, 12, 0),
   F_I(AVBANLEN, 0, 40, 0),
-  F_I(MAXBANS, 0, 45, 0),
-  F_I(MAXSILES, 0, 15, 0),
+  F_I(MAXBANS, 0, 50, 0),
+  F_I(MAXSILES, 0, 25, 0),
   F_I(HANGONGOODLINK, 0, 300, 0),
   F_I(HANGONRETRYDELAY, 0, 10, 0),
   F_I(CONNECTTIMEOUT, 0, 90, 0),

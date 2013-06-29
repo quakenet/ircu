@@ -20,7 +20,7 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  *
- * $Id: m_pong.c 1746 2007-01-15 03:08:23Z entrope $
+ * $Id$
  */
 
 /*

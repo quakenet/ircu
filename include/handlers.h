@@ -19,7 +19,7 @@
  */
 /** @file
  * @brief Declarations for all protocol message handler functions.
- * @version $Id: handlers.h 1925 2010-01-02 20:33:10Z klmitch $
+ * @version $Id$
  */
 #ifndef INCLUDED_handlers_h
 #define INCLUDED_handlers_h

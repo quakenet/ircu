@@ -22,7 +22,7 @@
  */
 /** @file
  * @brief Userload tracking and statistics.
- * @version $Id: userload.h 1231 2004-10-05 04:21:37Z entrope $
+ * @version $Id$
  */
 #ifndef INCLUDED_userload_h
 #define INCLUDED_userload_h

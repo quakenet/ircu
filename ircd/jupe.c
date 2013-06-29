@@ -20,7 +20,7 @@
  */
 /** @file
  * @brief Implementation of juped server handling functions.
- * @version $Id: jupe.c 1633 2006-03-25 03:46:56Z entrope $
+ * @version $Id$
  */
 #include "config.h"
 

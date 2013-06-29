@@ -18,7 +18,7 @@
  */
 /** @file
  * @brief Declarations of numeric replies and supporting functions.
- * @version $Id: numeric.h 1905 2009-02-09 01:30:13Z entrope $
+ * @version $Id$
  */
 #ifndef INCLUDED_numeric_h
 #define INCLUDED_numeric_h

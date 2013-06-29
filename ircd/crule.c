@@ -1,7 +1,7 @@
 /**
  * @file
  * @brief Connection rule parser and checker
- * @version $Id: crule.c 1334 2005-03-20 16:06:30Z entrope $
+ * @version $Id$
  *
  * by Tony Vencill (Tonto on IRC) <vencill@bga.com>
  *

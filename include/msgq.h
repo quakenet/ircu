@@ -20,7 +20,7 @@
  */
 /** @file
  * @brief Outbound message queue interface and declarations.
- * @version $Id: msgq.h 1231 2004-10-05 04:21:37Z entrope $
+ * @version $Id$
  */
 #ifndef INCLUDED_ircd_defs_h
 #include "ircd_defs.h"	/* BUFSIZE */

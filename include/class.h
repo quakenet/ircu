@@ -19,7 +19,7 @@
  */
 /** @file
  * @brief Declarations and interfaces for handling connection classes.
- * @version $Id: class.h 1511 2005-10-05 01:53:30Z entrope $
+ * @version $Id$
  */
 #ifndef INCLUDED_class_h
 #define INCLUDED_class_h

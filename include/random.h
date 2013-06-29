@@ -1,6 +1,6 @@
 /** @file random.h
  * @brief 32-bit pseudo-random number generator interface.
- * @version $Id: random.h 1213 2004-10-03 17:53:13Z entrope $
+ * @version $Id$
  */
 #ifndef INCLUDED_random_h
 #define INCLUDED_random_h

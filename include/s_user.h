@@ -1,6 +1,6 @@
 /** @file s_user.h
  * @brief Miscellaneous user-related helper functions.
- * @version $Id: s_user.h 1818 2007-07-14 02:40:01Z isomer $
+ * @version $Id$
  */
 #ifndef INCLUDED_s_user_h
 #define INCLUDED_s_user_h

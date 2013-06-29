@@ -20,7 +20,7 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  *
- * $Id: m_names.c 1929 2010-01-03 21:20:56Z entrope $
+ * $Id$
  */
 
 /*

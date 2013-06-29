@@ -19,7 +19,7 @@
  */
 /** @file
  * @brief Signal handlers for ircu.
- * @version $Id: ircd_signal.c 1633 2006-03-25 03:46:56Z entrope $
+ * @version $Id$
  */
 #include "config.h"
 

@@ -20,7 +20,7 @@
  */
 /** @file
  * @brief IRC-specific printf() clone interface.
- * @version $Id: ircd_snprintf.h 1231 2004-10-05 04:21:37Z entrope $
+ * @version $Id$
  */
 #ifndef INCLUDED_sys_types_h
 #include <sys/types.h>

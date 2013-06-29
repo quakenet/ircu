@@ -19,7 +19,7 @@
  */
 /** @file
  * @brief Input packet handling functions.
- * @version $Id: packet.c 1271 2004-12-11 05:14:07Z klmitch $
+ * @version $Id$
  */
 #include "config.h"
 

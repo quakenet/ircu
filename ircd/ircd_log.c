@@ -22,7 +22,7 @@
  */
 /** @file
  * @brief IRC logging implementation.
- * @version $Id: ircd_log.c 1620 2006-02-16 03:49:55Z entrope $
+ * @version $Id$
  */
 #include "config.h"
 

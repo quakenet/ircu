@@ -22,7 +22,7 @@
  */
 /** @file
  * @brief Handlers for SILENCE command.
- * @version $Id: m_silence.c 1937 2010-01-07 03:06:13Z entrope $
+ * @version $Id$
  */
 
 #include "config.h"
