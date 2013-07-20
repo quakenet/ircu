@@ -84,6 +84,7 @@ enum AuthRequestFlag {
     AR_IAUTH_HURRY,     /**< we told iauth to hurry up */
     AR_IAUTH_USERNAME,  /**< iauth sent a username (preferred or forced) */
     AR_IAUTH_FUSERNAME, /**< iauth sent a forced username */
+    AR_IAUTH_SOFT_DONE, /**< iauth has no objection to client */
     AR_PASSWORD_CHECKED, /**< client password already checked */
     AR_NUM_FLAGS
 };
@@ -528,7 +529,7 @@ static int preregister_user(struct Client *cptr)
     /* Can this ever happen? */
   case ACR_BAD_SOCKET:
     ++ServerStats->is_ref;
-    IPcheck_connect_fail(cptr);
+    IPcheck_connect_fail(cptr, 0);
     return exit_client(cptr, cptr, &me, "Unknown error -- Try again");
   }
   return 0;
@@ -791,7 +792,8 @@ int auth_ping_timeout(struct Client *cptr)
 
   /* Check for iauth timeout. */
   if (FlagHas(&auth->flags, AR_IAUTH_PENDING)) {
-    if (IAuthHas(iauth, IAUTH_REQUIRED)) {
+    if (IAuthHas(iauth, IAUTH_REQUIRED)
+        && !FlagHas(&auth->flags, AR_IAUTH_SOFT_DONE)) {
       sendheader(cptr, REPORT_FAIL_IAUTH);
       return exit_client_msg(cptr, cptr, &me, "Authorization Timeout");
     }
@@ -1020,12 +1022,6 @@ void start_auth(struct Client* client)
   }
   auth->port = remote.port;
 
-  /* Try to start DNS lookup. */
-  start_dns_query(auth);
-
-  /* Try to start ident lookup. */
-  start_auth_query(auth);
-
   /* Set required client inputs for users. */
   if (IsUserPort(client)) {
     cli_user(client) = make_user(client);
@@ -1036,6 +1032,12 @@ void start_auth(struct Client* client)
     /* Try to start iauth lookup. */
     start_iauth_query(auth);
   }
+
+  /* Try to start DNS lookup. */
+  start_dns_query(auth);
+
+  /* Try to start ident lookup. */
+  start_auth_query(auth);
 
   /* Add client to GlobalClientList. */
   add_client_to_list(client);
@@ -1826,7 +1828,7 @@ static int iauth_cmd_ip_address(struct IAuth *iauth, struct Client *cli,
     memcpy(&auth->original, &cli_ip(cli), sizeof(auth->original));
 
   /* Undo original IP connection in IPcheck. */
-  IPcheck_connect_fail(cli);
+  IPcheck_connect_fail(cli, 1);
   ClearIPChecked(cli);
 
   /* Update the IP and charge them as a remote connect. */
@@ -1878,6 +1880,22 @@ static struct ConfItem *auth_find_class_conf(const char *class_name)
   }
 
   return aconf;
+}
+
+/** Tentatively accept a client in IAuth.
+ * @param[in] iauth Active IAuth session.
+ * @param[in] cli Client referenced by command.
+ * @param[in] parc Number of parameters.
+ * @param[in] params Optional class name for client.
+ * @return Negative (CPTR_KILLED) if the connection is refused, one otherwise.
+ */
+static int iauth_cmd_soft_done(struct IAuth *iauth, struct Client *cli,
+			       int parc, char **params)
+{
+  /* Clear iauth pending flag. */
+  assert(cli_auth(cli) != NULL);
+  FlagSet(&cli_auth(cli)->flags, AR_IAUTH_SOFT_DONE);
+  return 1;
 }
 
 /** Accept a client in IAuth.
@@ -2099,6 +2117,7 @@ static void iauth_parse(struct IAuth *iauth, char *message)
   case 'I': handler = iauth_cmd_ip_address; has_cli = 1; break;
   case 'M': handler = iauth_cmd_usermode; has_cli = 1; break;
   case 'C': handler = iauth_cmd_challenge; has_cli = 1; break;
+  case 'd': handler = iauth_cmd_soft_done; has_cli = 1; break;
   case 'D': handler = iauth_cmd_done_client; has_cli = 1; break;
   case 'R': handler = iauth_cmd_done_account; has_cli = 1; break;
   case 'k': /* The 'k' command indicates the user should be booted

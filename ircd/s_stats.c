@@ -90,14 +90,13 @@ stats_configured_links(struct Client *sptr, const struct StatDesc* sd,
   struct ConfItem *tmp;
   unsigned short int port;
   int maximum;
-  char *host, *pass, *name, *username, *hub_limit;
+  char *host, *name, *username, *hub_limit;
 
   for (tmp = GlobalConfList; tmp; tmp = tmp->next)
   {
     if ((tmp->status & sd->sd_funcdata))
     {
       host = BadPtr(tmp->host) ? null : tmp->host;
-      pass = BadPtr(tmp->passwd) ? null : tmp->passwd;
       name = BadPtr(tmp->name) ? null : tmp->name;
       username = BadPtr(tmp->username) ? null : tmp->username;
       hub_limit = BadPtr(tmp->hub_limit) ? null : tmp->hub_limit;
@@ -115,12 +114,13 @@ stats_configured_links(struct Client *sptr, const struct StatDesc* sd,
                    (name[0] == ':' ? "0" : ""), (tmp->name ? tmp->name : "*"),
                    port, get_conf_class(tmp));
       else if (tmp->status & CONF_OPERATOR)
-        send_reply(sptr, RPL_STATSOLINE,
-                   ((FlagHas(&tmp->privs_dirty, PRIV_PROPAGATE)
-                     && FlagHas(&tmp->privs, PRIV_PROPAGATE))
-                    || (FlagHas(&tmp->conn_class->privs_dirty, PRIV_PROPAGATE)
-                        && FlagHas(&tmp->conn_class->privs, PRIV_PROPAGATE)))
-                   ? 'O' : 'o', username, host, name, get_conf_class(tmp));
+      {
+        int global = FlagHas(&tmp->privs_dirty, PRIV_PROPAGATE)
+            ? FlagHas(&tmp->privs, PRIV_PROPAGATE)
+            : FlagHas(&tmp->conn_class->privs, PRIV_PROPAGATE);
+        send_reply(sptr, RPL_STATSOLINE, global ? 'O' : 'o',
+                   username, host, name, get_conf_class(tmp));
+      }
     }
   }
 }

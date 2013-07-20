@@ -90,7 +90,7 @@ typedef unsigned long flagpage_t;
 #define FlagClr(set,flag) ((set)->bits[FLAGSET_INDEX(flag)] &= ~FLAGSET_MASK(flag))
 
 /** String containing valid user modes, in no particular order. */
-#define infousermodes "dioswkgx"
+#define infousermodes "diOoswkgx"
 
 /** Operator privileges. */
 enum Priv
@@ -317,6 +317,8 @@ struct Client {
 #define cli_username(cli)	((cli)->cli_username)
 /** Get client realname (information field). */
 #define cli_info(cli)		((cli)->cli_info)
+/** Get client account string. */
+#define cli_account(cli)	(cli_user(cli) ? cli_user(cli)->account : "0")
 
 /** Get number of incoming bytes queued for client. */
 #define cli_count(cli)		con_count(cli_connect(cli))
